@@ -40,18 +40,28 @@ public class MoreAndMoreTests {
 	}
 
 	//
-	// @Test
-	// public void CubeTest() {
-	//
-	// assertTrue(isCube(27));
-	// assertTrue(isCube(216));
-	// assertTrue(isCube(729));
-	// assertTrue(isCube(1));
-	// assertFalse(isCube(3));
-	// assertFalse(isCube(22));
-	// assertFalse(isCube(143));
-	//
-	// }
+	 @Test
+	 public void CubeTest() {
+	
+	 assertTrue(isCube(27));
+	 assertTrue(isCube(216));
+	 assertTrue(isCube(729));
+	 assertTrue(isCube(1));
+	 assertFalse(isCube(3));
+	 assertFalse(isCube(22));
+	 assertFalse(isCube(143));
+	
+	 }
+
+	private boolean isCube(int i) {
+		for (int j = 0; j <= i; j++) {
+			System.out.println(j);
+			if (j == Math.cbrt(i)) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 	private String multiply(int i, int j) {
 		String result = "";
