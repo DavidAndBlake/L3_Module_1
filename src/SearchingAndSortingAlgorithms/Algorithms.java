@@ -26,5 +26,27 @@ public class Algorithms {
 		return containsAPearl;
 	}
 
+	public static double findTallest(List<Double> peeps) {
+		double tallest = peeps.get(0);
+		for (int i = 0; i < peeps.size(); i++) {
+			if (tallest < peeps.get(i))
+			{
+				tallest = peeps.get(i);
+			}
+		}
+		return tallest;
+	}
+
+	public static Object findLongestWord(List<String> words) {
+		String longest = words.get(0);
+		for (int i = 0; i < words.size(); i++) {
+			if (longest.length() < words.get(i).length())
+			{
+				longest = (words.get(i));
+			}
+		}
+		return longest;
+	}
+
 	// Add other methods here
 }
