@@ -70,5 +70,14 @@ public class Algorithms {
 		return results;
 	}
 
+	public static Object sortDNA(List<String> unsortedSequences) {
+		for (int i = 0; i < unsortedSequences.size(); i++){
+			for(int j = i + 1; j < unsortedSequences.size(); j++){
+				
+			}
+		}
+		return null;
+	}
+
 	// Add other methods here
 }
