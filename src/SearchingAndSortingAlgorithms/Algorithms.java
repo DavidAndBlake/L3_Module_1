@@ -50,7 +50,6 @@ public class Algorithms {
 		for (int i = 0; i < message1.size(); i++) {
 			String s = message1.get(i);
 			if (s.contains("... --- ...")) {
-				System.out.println("sd");
 				return true;
 			}
 		}
@@ -72,8 +71,8 @@ public class Algorithms {
 
 	public static Object sortDNA(List<String> unsortedSequences) {
 		for (int i = 0; i < unsortedSequences.size(); i++){
-			for(int j = i + 1; j < unsortedSequences.size(); j++){
-				
+			for (int j = i + 1; j < unsortedSequences.size(); j++) {
+				if 
 			}
 		}
 		return null;
