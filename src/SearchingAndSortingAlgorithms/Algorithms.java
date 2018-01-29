@@ -70,11 +70,20 @@ public class Algorithms {
 	}
 
 	public static Object sortDNA(List<String> unsortedSequences) {
-		for (int i = 0; i < unsortedSequences.size(); i++){
+		for (int i = 0; i < unsortedSequences.size(); i++) {
 			for (int j = i + 1; j < unsortedSequences.size(); j++) {
-				if 
+				if (unsortedSequences.get(i).length() > unsortedSequences.get(j).length()) {
+					String temp = unsortedSequences.get(i);
+					unsortedSequences.set(i, unsortedSequences.get(j));
+					unsortedSequences.set(j, temp);
+				}
 			}
 		}
+		return unsortedSequences;
+	}
+
+	public static List<String> sortWords(List<String> words) {
+
 		return null;
 	}
 
