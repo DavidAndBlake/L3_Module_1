@@ -83,7 +83,9 @@ public class Algorithms {
 	}
 
 	public static List<String> sortWords(List<String> words) {
-
+		for (int i = 0; i < words.size(); i++) {
+			
+		}
 		return null;
 	}
 
